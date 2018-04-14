@@ -1,0 +1,22 @@
+body {
+  margin: 0px;
+  /* padding: 30px; */
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 3.5em;
+}
+
+.marginal {
+  margin: 30px auto;
+}
+
+.horizontal-margin {
+  margin: 0px 10px 0px 0px;
+}
+.text-center {
+  text-align: center;
+}
+.full-width {
+  width: 100%;
+}
