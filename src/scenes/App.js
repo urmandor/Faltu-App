@@ -27,6 +27,7 @@ class App extends Component {
       <div>
         <Navbar isLoggedIn={this.state.isLoggedIn} logout={this.onLoginChange} />
         <div className="container marginal">
+          <Route path="/" exact render={() => (this.state.isLoggedIn ? <Books /> : <Redirect to='/login' />)} />
           <Route path="/login" exact render={() => (<Login onLogin={this.onLoginChange} />)} />
           <Route path="/books" exact component={Books} />
           <Route path="/book/:id" exact render={() => (this.state.isLoggedIn ? <Book /> : <Redirect to="/login" />)} />
